@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Intro from "./components/Intro";
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="flex min-h-screen flex-col bg-[#FFF9F2] text-[#800020]">
       <Navbar />
-      
+
       <Hero
         stars={stars}
         downloads={downloads}
@@ -39,6 +40,8 @@ function App() {
         handleReport={handleReport}
         handleReset={handleReset}
       />
+
+      <Intro author="Prince Kenn Sorita" />
 
       <main className="grid grid-cols-3 gap-8 px-20">
         <div className="rounded-xl bg-[#F3E6D5] p-6">
